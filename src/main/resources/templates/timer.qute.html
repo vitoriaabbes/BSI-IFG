@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Placar do jogo</title>
+
+</head>
+<body>
+  <div>
+    <h1 id="play-time">00:00</h1>
+    <button class="start-button" onclick="start()">Iniciar</button>
+    <button class="pause-button" onclick="pause()">Pausar</button>
+    <button class="stop-button" onclick="stop()">Parar</button>
+  </div>
+  <script src="timer.js"></script>
+  <br>
+  <div style="text-align: center; display: inline-block;">
+      <h4>Time 1</h4>
+      <h2 id="team1-placar">0</h2>
+      <button class="team1-two-points-basket" onclick="addTwoPoints(team)">+2 pontos</button>
+      <button class="team1-three-points-basket" onclick="addThreePoints(team)">+3 pontos</button>
+  </div>
+  <div style="text-align: center; display: inline-block;">
+      <h4>Time 2</h4>
+      <h2 id="team2-placar">0</h2>
+      <button class="team2-two-points-basket" onclick="addTwoPoints(team)">+2 pontos</button>
+      <button class="team2-three-points-basket" onclick="addThreePoints(team)">+3 pontos</button>
+  </div>
+    <script src="scoreboard.js"></script>
+</body>
+</html>
